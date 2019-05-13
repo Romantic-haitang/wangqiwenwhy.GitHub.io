@@ -1,0 +1,119 @@
+@font-face {
+				font-family: wt;
+				src: url('../font/iconfont.eot'), 
+				url('../font/iconfont.ttf'), 
+				url('../font/iconfont.woff'),
+				url('../font/iconfont.woff2');
+			}
+
+#topone .you {
+	font-family: wt;
+	font-size: 20px;
+	margin-top: 10px;
+	float: left;
+	color: white;
+}
+
+#box {
+	background: #f9f9fb;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+}
+
+#top {
+	height: 44px;
+	width: 100%;
+	background-color: cornflowerblue;
+}
+
+#topone .you {
+	font-family: wt;
+	font-size: 20px;
+	margin-top: 10px;
+	float: left;
+	color: white;
+}
+
+#topone .wenzi {
+	font-size: 12px;
+	margin-top: 13px;
+	float: left;
+	color: white;
+}
+#topone .wenzi a{
+	text-decoration: none;
+	color: white;
+}
+#topone .append {
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: -10px;
+	left: 50%;
+	color: white;
+	position: absolute;
+}
+
+#box .navigation {
+	height: 22px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #EEEEEE;
+	border-bottom: 1px solid #dbdada;
+}
+
+#box .navigation li {
+	line-height: 22px;
+	font-size: 8px;
+	margin-left: -260px;
+	color: #999998;
+}
+
+#box .navigation li:hover {
+	border-bottom: 3px solid #6495ed;
+	color: #6495ed;
+}
+
+#box #one {
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #dbdada;
+	background-color: whitesmoke;
+}
+
+#box #one img {
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.tux {
+	overflow: hidden;
+}
+
+.tux .imgg {
+	float: left;
+}
+
+.tux .texttwo {
+	float: left;
+	margin-left: 10px;
+	line-height: 60px;
+	color: #6495ed;
+	font-size: 11px;
+}
+
+.tux .xuanze {
+	float: right;
+	margin-right: 20px;
+	line-height: 60px;
+}
+
+.tux .xuanze button {
+	box-shadow: 0 1px white inset;
+	color: #ff0005;
+	outline: none;
+}

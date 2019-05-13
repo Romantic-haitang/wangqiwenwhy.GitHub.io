@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>好友页面</title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/publicUpDown.css" />
+		<link rel="stylesheet" href="css/Friend-List.css" />
+	</head>
+
+	<body>
+		<div id="box">
+			<!--顶部-->
+			<div id="top">
+				<!--头像-->
+				<div id="portrait">
+					<a href="personal.html">
+						<img src="img/QQ头像.jpg" />
+					</a>
+				</div>
+				<p>我的好友</p>
+				<!--加号-->
+				<div id="plus" style="font-family: fonts; font-size: 24px;">
+					<a href="Add-Friends.html" style="color: white;">
+						&#xe75c;
+					</a>
+				</div>
+
+			</div>
+			<!--顶部的高度，因为顶部用了绝对定位，所以给他下面在加一个和他高度一样的div-->
+			<div id="top_back"></div>
+
+			<!--内容部分-->
+			<div id="content">
+				<div id="pal">
+					<p>新朋友</p>
+					<p id="newNumber">></p>
+				</div>
+				
+			</div>
+
+			<!--<div class="list">张三那</div>-->
+			<!--底部-->
+			<div id="bottom">
+				<div id="news">
+					<a target="_self" href="index.html" >
+						&#xeb42;
+						<p>消息</p>
+						<p class="dot"></p>
+					</a>
+				</div>
+				<div id="friend" >
+					&#xe654;
+					<p>好友</p>
+					<p class="dot"></p>
+				</div>
+				<div id="nearby">
+					<a target="_self" href="nearby.html" >
+						&#xe60b;
+						<p>附近</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--<script>
+		localStorage.clear();
+	</script>-->
+	<script src="js/noLogin.js"></script>
+	<script type="text/javascript" src="js/isPc.js"></script>
+	<script type="text/javascript" src="js/Friend-List.js"></script>
+	<script type="text/javascript" src="js/publicUpDown.js"></script>
+
+
+</html>

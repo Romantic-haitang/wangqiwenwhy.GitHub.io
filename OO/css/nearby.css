@@ -1,0 +1,77 @@
+
+
+/*消息页面---内容部分*/
+#content{
+	width: 100%;
+	background-color: white;
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+#content .items{
+	width: 96%;
+	height: 60px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	border-bottom: 1px solid #DCDCDC;
+}
+.items div:nth-of-type(1){
+	float: left;
+	width: 50px;
+	background-color: lavender;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.items div:nth-of-type(1) img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.items div:nth-of-type(2){
+	float: right;
+	width: 220px;
+	cursor: pointer;
+}
+
+/*内容部分*/
+/*#content #photo{
+	height: 390px;
+	width: 100%;
+	overflow: hidden;
+}
+#content #photo img{
+	height: 280px;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-radius: 2%;
+}
+#content #onlyone{
+	height: 100px;
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+ #onlyone #user_name{
+ 	text-align: center;
+ }
+ #onlyone #user_id{
+ 
+ 	text-align: center;
+ }
+  #onlyone .qm{
+
+ 	text-align: center;
+ 	margin-top: 10px;
+ }
+ #xing li{
+ 	font-family: wt;
+ }*/

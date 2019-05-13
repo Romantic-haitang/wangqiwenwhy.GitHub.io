@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js" ></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/personal.css" />
+	</head>
+	<body>
+		<div id="box">
+			<div id="Return">
+				<a href="index.html"><返回</a>
+			</div>
+			<div id="banner"></div>
+			<div id="Headportrait">
+				<div id="head"></div>
+				<p id="names">大老板</p>
+			</div>
+			<div id="Detailed">
+				<div id="photo">
+					<p><img src="img/i.png"/></p>
+					<p id="idh">18482155682</p>
+				</div>
+				<div id="photo">
+					<p><img src="img/dz.png"/></p>
+					<p id="idhs">聊天记录</p>
+				</div>
+			</div>
+		
+			
+			<div id="Lowerpart">
+				<div id="Sendnews">发消息</div>
+				<!--<div id="Addfriends">删除好友</div>-->
+			</div>	
+		</div>
+	</body>
+	<script src="js/noLogin.js"></script>
+	<script type="text/javascript" src="js/isPc.js" ></script>
+	<!--<script src="js/jquery-3.3.1.min.js"></script>-->
+	
+	<script>
+		var myInfo = JSON.parse(localStorage.myInfo)
+		var Sendnews = document.getElementById("Sendnews");
+			Sendnews.onclick=function (){
+			location.href="Chat.html"
+		}
+		var iimm = document.getElementById("head")
+		var nickName = document.getElementById("names")
+		var Cestbon = document.getElementById("idh");
+		var purified = document.getElementById("purified");
+		var Addfriends = document.getElementById("Addfriends");
+
+
+
+		console.log(Cestbon)
+//			iimm.url=myInfo.headLogo;
+			nickName.innerHTML= localStorage.nick;
+			Cestbon.innerHTML = localStorage.myId;
+		console.log(myInfo);
+		iimm.style.backgroundImage = "url(https://onlinechat.jinyingyi.com.cn/image/default_head.jpg)"
+		//
+//		Addfriends.onclick=function(){
+//			localStorage.clear();
+//			location.reload();
+//		}
+//localStorage.clear()
+	</script>
+</html>

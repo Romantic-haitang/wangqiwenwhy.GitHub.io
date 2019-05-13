@@ -1,0 +1,239 @@
+/*服务器字体*/
+/*@font-face {
+	font-family: wt;
+	src: url('../font/iconfont.eot'), 
+	url('../font/iconfont.ttf'), 
+	url('../font/iconfont.woff'),
+	url('../font/iconfont.woff2');
+}*/
+#photo p{
+	 font-family: 'iconfont'; 
+	 margin-left: 20px;
+}
+#photo p img{
+	height: 20px;
+	width: 20px;
+}
+#box{
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #fbfaf8;
+}
+#banner{
+	width: 100%;
+	height: 30%;
+	background-image: url(../img/banner.jpg);
+	background-size: 100% 100%;
+	opacity: :;;
+}
+#Headportrait{
+	width: 100%;
+	/*background-color: yellow;*/
+	position: absolute;
+	top: 20%;
+}
+/*头像*/
+#head{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+    border:7px solid #fbfaf8;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*id名*/
+#names{
+	text-align: center;
+	font-weight: 800;
+	height: 38px;
+	border-bottom: 2px solid #dfdfdf;
+	font-size: 18px;
+	margin-top: 14px;
+}
+/*个人信息  号码*/
+#Voice{
+	
+}
+#Detailed{
+	width: 90%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 40%;
+	/*background-color: lawngreen;*/	
+	border-radius: 5px;
+}
+#photo p{
+	 font-family: 'iconfont'; 
+	 margin-left: 20px;
+}
+#photo p img{
+	height: 20px;
+	width: 20px;
+}
+/*#shez{
+	height: 50px;
+	width: 100%;
+	background-color: red;
+}*/
+#Detailed div:nth-of-type(1){
+
+	height: 40px;
+	margin-left: 50px;
+	line-height: 40px;
+	display: flex;
+	justify-content:space-around;
+	border-bottom: 1px solid #dfdfdf;
+}
+#Detailed div:nth-of-type(2){
+
+	height: 40px;
+	margin-top:5px;
+	margin-left: 50px;
+	line-height: 40px;
+	/*background-color: lightblue;*/
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #dfdfdf;
+}
+#Detailed div:nth-of-type(3){
+	height: 40px;
+	margin-top:5px;
+	margin-left: 50px;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 1px solid #dfdfdf;
+}
+#idh{
+	display: block;
+	float: left;
+	width: 50%;
+}
+#idhs{
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+
+#Cestbon{
+	/*background-color: yellow;*/
+	line-height: 40px;
+	margin-left: 50px;
+}
+#purified{
+	line-height: 40px;
+	margin-left: 50px;
+}
+
+
+.promptbox{
+	width: 70%;
+	height: 30%;
+	background-color: cadetblue;
+	position: absolute;
+	opacity: 0.9;
+	border-radius: 10px;
+	top: 20%;
+	left: 15%;
+	display: none;
+
+}
+.pq {
+	margin-top: 50px;
+	/*margin-left: 50px;*/
+	text-align:center;
+	/*float: left;*/
+}
+.cl{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.pqq:hover{
+	cursor: pointer;
+	border-bottom: 2px solid red;
+}
+.pqqq:hover{
+	cursor: pointer;
+	border-bottom: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+/*下面部分*/
+#Lowerpart{
+	width: 100%;
+	height: 46px;
+	
+	text-align: center;
+	line-height: 46px;
+	font-weight: 600;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	/*display: flex;
+	justify-content: space-around;*/
+	
+}
+/*发消息和加好友*/
+#Sendnews{
+	/*width: 46%;*/
+	height: 40px;
+	/*background-color: #000000;*/
+	/*float: left;*/
+	background-color: cornflowerblue;
+	margin-top: 2px;
+	border: 1px solid seagreen ;
+	border-radius: 10px;
+	cursor: pointer;
+	color: black;
+}
+#Addfriends{
+	width: 46%;
+	height: 40px;
+	/*background-color: #000000;*/
+	/*float: left;*/
+	margin-top: 2px;
+	border: 1px solid seagreen ;
+	
+	border-radius: 10px;
+	cursor: pointer;
+}
+#Voice{
+	font-size: 30px;
+	font-weight: 600;
+	color: cornflowerblue;
+	opacity: 0.6;
+	margin-top: 50px;
+}
+#hafas{
+	font-size: 30px;
+	font-weight: 600;
+	color: cornflowerblue;
+	float: right;
+	margin-top: 5px;
+	opacity: 0.6;
+}
+#Return{
+	width: 100%;
+	/*background-color: yellow;*/
+	position: absolute;
+	height: 40px;	
+	line-height: 40px;
+}
+#Return a {
+	text-decoration: none;
+	margin-left: 5px;
+	color: #fff;
+	
+}

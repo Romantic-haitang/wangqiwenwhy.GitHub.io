@@ -1,0 +1,148 @@
+body{
+	background-image: url(../img/bglogin.png);
+	background-size: 120% 133%;
+	background-repeat: no-repeat;
+}
+#box {
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, .8);
+	overflow: hidden;
+}
+
+#title {
+	width: 90%;
+	height: 40px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 75px;
+}
+
+#title img {
+	width: 80px;
+	height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+#title div {
+	margin-left: 10px;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
+#name {
+	width: 90%;
+	height: 50px;
+	border-bottom: 1px solid gainsboro;
+	/*background-color: hsla(0, 0%, 71%, .1);*/
+	margin: 0 auto;
+}
+
+#name div {
+	width: 12%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+#name input {
+	width: 80%;
+	height: 98%;
+	outline: none;
+	border: none;
+	margin-top: 2px;
+	background-color: transparent;
+	float: right;
+}
+
+#pwd {
+	width: 90%;
+	height: 50px;
+	border-bottom: 1px solid gainsboro;
+	margin: 0 auto;
+}
+
+#pwd div {
+	width: 12%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+}
+
+#pwd input {
+	width: 80%;
+	height: 98%;
+	outline: none;
+	border: none;
+	margin-top: 2px;
+	background-color: transparent;
+	float: right;
+}
+
+#rember {
+	margin-top: 20px;
+	font-size: 10px;
+	float: left;
+	color: gainsboro;
+}
+
+#error {
+	float: right;
+	font-size: 10px;
+	margin-top: 20px;
+}
+
+#error a {
+	text-decoration: none;
+	color: gainsboro;
+}
+
+#btn {
+	width: 90%;
+	height: 43px;
+	border: none;
+	background-color: dodgerblue;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	display: block;
+	margin: 0 auto;
+}
+
+#forget {
+	width: 90%;
+	height: 50px;
+	margin: 0 auto;
+	line-height: 50px;
+}
+
+#forget a {
+	text-decoration: none;
+	font-size: 12px;
+	color: dodgerblue;
+}
+
+#forget a:nth-of-type(1) {
+	float: left;
+}
+
+#forget a:nth-of-type(2) {
+	float: right;
+}
+
+#foter {
+	width: 90%;
+	height: 50px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 50px;
+	font-size: 12px;
+	color: darkgrey;
+	margin-top: 90px;
+}
+
+#fu {
+	text-decoration: none;
+	color: #1E90FF;
+}

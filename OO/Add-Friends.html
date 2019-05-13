@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<style type="text/css">
+			@font-face {
+				font-family: wt;
+				src: url('font/iconfont.eot'), 
+				url('font/iconfont.ttf'), 
+				url('font/iconfont.woff'),
+				url('font/iconfont.woff2');
+			}
+			
+			* {
+				list-style: none;
+			}
+			
+			#box {
+				background-color: #f9f9fb;
+				margin: 0 auto;
+				position: relative;
+				
+			}
+			
+			#top {
+				height: 44px;
+				width: 100%;
+				background-color: cornflowerblue;
+			}
+			
+			#topone .you {
+				font-family: wt;
+				font-size: 20px;
+				margin-top: 10px;
+				float: left;
+				color: white;
+			}
+			
+			#topone .wenzi {
+				font-size: 12px;
+				margin-top: 13px;
+				float: left;
+				color: white;
+			}
+			
+			#topone .append {
+				font-size: 15px;
+				margin-top: 10px;
+				margin-left: -10px;
+				left: 50%;
+				color: white;
+				position: absolute;
+			}
+			
+			#box .navigation {
+				height: 30px;
+				width: 100%;
+				display: flex;
+				justify-content: space-evenly;
+				background-color: white;
+				border-bottom: 1px solid #dbdada;
+			}
+			
+			#box .navigation li {
+				line-height: 30px;
+				font-size: 10px;
+			}
+			
+			#box .navigation li:hover {
+				border-bottom: 3px solid #6495ed;
+				color: #6495ed;
+			}
+			
+			#box #search {
+				height: 34px;
+				width: 100%;
+				line-height: 34px;
+				margin-top: 20px;
+				font-family: wt;
+				background-color: #ECECEC;
+				border-bottom: 1px solid #f0f0f0;
+				border-top: 1px solid #f0f0f0;
+			}
+			
+			#search input {
+				height: 18px;
+				width: 73%;
+				margin-left: 5px;
+				outline: 0;
+				border: 0;
+				font-size: 11px;
+				color: #9f9f9f;
+				background: #ececec;
+			}
+			
+			.list {
+				height: 40px;
+				width: 100%;
+				float: left;
+				display: flex;
+				justify-content: space-evenly;
+				margin-top: 10px;
+				border-top: 1px solid #f0f0f0;
+				border-bottom: 1px solid #f0f0f0;
+			}
+			
+			#photo {
+				font-family: wt;
+				height: 30px;
+				width: 10%;
+				margin-left: 5px;
+				line-height: 30px;
+				float: left;
+				margin-top: 5px;
+				text-align: center;
+				font-size: 25px;
+			}
+			
+			#extend {
+				height: 20px;
+				width: 120px;
+				float: left;
+				margin-left: 6px;
+				margin-top: 10px;
+				font-size: 12px;
+			}
+			
+			#forum {
+				height: 20px;
+				width: 90px;
+				margin-left: 20px;
+				margin-top: 10px;
+				font-size: 1px;
+			}
+			
+			#towards {
+				height: 20px;
+				width: 30px;
+				float: left;
+				margin-left: 70px;
+				margin-top: 10px;
+			}
+			
+			#towards img {
+				height: 20px;
+				width: 20px;
+			}
+			
+			#pal {
+				height: 30px;
+			}
+			/*ul样式*/
+			
+			#onlyFriend {
+				height: 50px;
+				width: 100%;
+				background-color: cyan;
+				float: left;
+				display: none;
+			}
+			
+			#logo {
+				border-radius: 50%;
+				background-color: orange;
+				height: 40px;
+				width: 40px;
+				float: left;
+				margin-left: 20px;
+				margin-top: 5px;
+				overflow: hidden;
+			}
+			
+			#logo img {
+				height: 40px;
+				width: 40px;
+			}
+			
+			#onleName {
+				margin-top: 8px;
+				float: left;
+				margin-left: 5px;
+			}
+			
+			#onlyId {
+				margin-top: 8px;
+				float: left;
+				margin-left: 10px;
+			}
+			
+			#onlyFriend #apply {
+				float: right;
+				display: inline-block;
+				margin-top: 12.5px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="top">
+				<div id="topone">
+					<p class="you" style="cursor: pointer;">&#xe624;</p>
+					<p class="wenzi">联系人</p>
+					<p class="append">添加</p>
+				</div>
+			</div>
+			<ul class="navigation">
+				<li>找人</li>
+				<li>找群</li>
+				<li>找公众号</li>
+			</ul>
+			<div id="search">
+				<p style="display: inline-block; margin-left: 5px; float: left; font-size: 13px; color: #9f9f9f; line-height: 38px;">&#xe623;</p>
+				<input type="text" name="" id="user" placeholder="OO号/手机号/OO令" />
+				<p id="sc" style="display: inline-block; margin-left: 5px; cursor: pointer; font-size: 13px; color: #9f9f9f; line-height: 38px;">X</p>
+				<p onclick="findUser()" style="display: inline-block; cursor: pointer; margin-right: 10px; float: right; font-size: 13px; color: #9f9f9f; line-height: 38px;">查找</p>
+			</div>
+			<div id="onlyFriend">
+				<div id="logo">
+					<img src="#" />
+				</div>
+				<p id="onleName">
+					墨染
+				</p>
+				<p id="onlyId">
+					2544
+				</p>
+				<input type="button" id="apply" value="申请">
+			</div>
+			<ul class="list">
+				<li id="photo">
+					&#xe7e0;
+				</li>
+				<li id="extend">OO拓展</li>
+				<li id="forum">论坛、处O友</li>
+				<li id="towards">
+					<img src="img/xiangyou.png" alt="" />
+				</li>
+			</ul>
+
+			<!--添加手机联系人-->
+			<div class="list">
+				<div id="photo">
+					&#xe61f;
+				</div>
+				<div id="extend">添加手机联系人</div>
+				<div id="forum">刘成、张世伟</div>
+				<div id="towards">
+					<img src="img/xiangyou.png" alt="" />
+				</div>
+			</div>
+
+			<!--扫一扫添加好友-->
+			<div class="list">
+				<div id="photo">
+					&#xe663;
+				</div>
+				<div id="extend">扫一扫添加好友</div>
+				<div id="forum">VR正在获取中</div>
+				<div id="towards">
+					<img src="img/xiangyou.png" alt="" />
+				</div>
+			</div>
+
+			<!--面对面群聊-->
+			<div class="list">
+				<div id="photo">
+					&#xe619;
+				</div>
+				<div id="extend">面对面群聊</div>
+				<div id="forum">四位数的验证码就能进入群聊</div>
+				<div id="towards">
+					<img src="img/xiangyou.png" alt="" />
+				</div>
+			</div>
+
+			<!--按条件查询陌生人-->
+			<div class="list">
+				<div id="photo">
+					&#xe623;
+				</div>
+				<div id="extend">条件查询陌生人</div>
+				<div id="forum">条件：女、18-22岁、成都</div>
+				<div id="towards">
+					<img src="img/xiangyou.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/noLogin.js"></script>
+	<script type="text/javascript" src="js/isPc.js"></script>
+	<script type="text/javascript">
+		$("input").click(function() {
+			$(".list").hide()
+		})
+		$("#sc").click(function() {
+			$("input").val("")
+		})
+		$(".you").click(function() {
+			location.href = "index.html"
+		})
+
+		//获取在线好友列表-筛选
+		var allUsers = {};
+        // 申请添加好友的参数：  朋友的id
+		var friend_user_id = undefined;
+		function findUser() 
+		{
+			var arr = JSON.parse(localStorage.myInfo)
+			var data = {
+				user_id: JSON.parse(localStorage.myInfo).id,
+				sign_str: JSON.parse(localStorage.myInfo).sign
+			}
+			//判断搜索框为空
+
+			$.ajax({
+				url: "https://onlinechat.jinyingyi.com.cn/interface/getOnlineUsers.php",
+				type: "post",
+				dataType: "json",
+				data: data,
+				async: true,
+				success: function(res) {
+//					console.log(res)
+					for(var i = 0; i < res.data.length; i++) {
+
+						if(parseInt($("#user").val()) == res.data[i].nickname || $("#user").val() == res.data[i].user_id) {
+
+							//昵称
+							var nickname = res.data[i].nickname
+							//头像
+							var head_logo = res.data[i].head_logo
+							//账号
+							var user_id = res.data[i].user_id
+							// 设置全局变量，给申请好友参数赋值
+							friend_user_id = user_id;
+							//显示
+							$("#onlyFriend")[0].style.display = "block"
+							$("#logo img")[0].src = "https://onlinechat.jinyingyi.com.cn/" + head_logo
+							$("#onleName").html(nickname)
+							$("#onlyId").html(user_id)
+							break;
+						} else {
+//							console.log("不存在")
+						}
+					}
+
+				},
+				error: function(err) {
+					console.log("获取失败")
+				}
+			});
+		}
+
+		/*[sign_str]为签名字符串: JSON.parse(localStorage.myInfo).sign
+		[user_id]为自己的id  :JSON.parse(localStorage.myInfo).id
+		[friend_user_id]为想要添加为好友的对方的user_id : friend_user_id*/
+		// 点击申请按钮
+		$("#apply").click(function(){
+			$("#apply")[0].disabled = "disabled"
+			$("#apply").val("已申请")
+			$.ajax({
+				type:"post",
+				url:"https://onlinechat.jinyingyi.com.cn/interface/addFriend.php",
+				async:true,
+				data:{
+					sign_str:JSON.parse(localStorage.myInfo).sign,
+					user_id:JSON.parse(localStorage.myInfo).id,
+					friend_user_id:friend_user_id
+				},
+				success:function(res){
+					console.log(res)
+					// 按钮设置可点击 ， 文本变成“申请” ， div隐藏
+					setTimeout(function(){
+						$("#apply")[0].disabled = ""
+					$("#apply").val("申请")
+					$("#onlyFriend")[0].style.display="none"
+						// 跳转到消息页面
+						location.href="index.html"
+					},3000)
+					
+				},
+				error:function(err){
+					console.log(err)	
+				}
+			});
+		})
+		
+		
+	</script>
+
+</html>

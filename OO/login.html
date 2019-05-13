@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+
+	<body>
+		<div id="box">
+			<div id="title">
+				<img src="img/OOlogo.png" />
+				<div>OO</div>
+			</div>
+			<div id="name">
+				<div>帐号</div>
+				<input type="text" placeholder="手机号或邮箱" id="phone" />
+			</div>
+			<div id="pwd">
+				<div>密码</div>
+				<input type="password" placeholder="请输入密码" id="paswd" />
+			</div>
+			<div style="height: 75px;width: 90%;margin: 0 auto;">
+				<div id="rember">
+					<input type="checkbox" id="miss"/>记住我
+				</div>
+				<div id="error">
+					<a href="#">登录遇到问题？</a>
+				</div>
+			</div>
+			<button id="btn" onclick="login()">登录</button>
+			<div id="forget">
+				<a href="#">忘记密码？</a>
+				<a href="register.html">新用户注册</a>
+			</div>
+			<p id="foter">登录即代表阅读并同意
+				<a href="#" id="fu">服务条款</a>
+			</p>
+		</div>
+	</body>
+	<script>
+		localStorage.clear()
+	</script>
+	<script type="text/javascript" src="js/isLogin.js"></script>
+	<script src="js/isPc.js"></script>
+	<script src="js/login.js"></script>
+
+</html>

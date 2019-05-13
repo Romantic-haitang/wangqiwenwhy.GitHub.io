@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>消息页面</title>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/publicUpDown.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+
+	<body>
+		<div id="box">
+			<!--顶部-->
+			<div id="top">
+				<!--头像-->
+				<div id="portrait">
+					<a href="personal.html">
+						<img src="img/QQ头像.jpg" />
+					</a>
+				</div>
+				<p>消息</p>
+				<!--加号-->
+				<div id="plus">
+					<a href="./Add-Friends.html" style="color: white;">
+						+
+					</a>
+				</div>
+				
+			</div>
+			<!--顶部的高度，因为顶部用了绝对定位，所以给他下面在加一个和他高度一样的div-->
+			<div id="top_back"></div>
+			
+			<!--内容部分-->
+			<div id="content">
+				<!--<div class="items">
+					<div id="imgs">
+						<a href="Friend-Details.html">
+							<img id="qwq" src="img/QQ头像.jpg"/>
+						</a>
+					</div>
+					<div id="message">
+						<p class="names">我的名字</p>
+						<p class="advices">我发的消息</p>
+						
+					</div>
+					<div class="mark">99+</div>
+				</div>-->
+			</div>
+			
+			
+			
+			<!--底部-->
+			<div id="bottom">
+				<div id="news" >
+					&#xeb42;
+					<p>消息</p>
+					<p class="dot"></p>
+				</div>
+				
+				<div id="friend">
+					<a target="_self" href="Friend-List.html" >
+						&#xe654;
+						<p>好友</p>
+						<p class="dot"></p>
+					</a>
+				</div>
+				
+				<div id="nearby">
+					<a target="_self" href="nearby.html" >
+						&#xe60b;
+						<p>附近</p>
+					</a>
+				</div>
+				
+				
+			</div>
+		</div>
+	</body>
+	<script src="js/noLogin.js"></script>
+	<script src="js/isPc.js"></script>
+	<script type="text/javascript" src="js/publicUpDown.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+//		var homeInfo = JSON.parse(localStorage.homeInfo);
+//		console.log(homeInfo)
+//		$("#names").html(homeInfo.nickname);
+//		$("#advices").html(homeInfo.user_id);
+
+			
+	</script>
+</html>
